@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\seven-pace-kafka\\seven-pace-kafka.csproj": {}
+  },
+  "projects": {
+    "D:\\seven-pace-kafka\\seven-pace-kafka.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\seven-pace-kafka\\seven-pace-kafka.csproj",
+        "projectName": "seven-pace-kafka",
+        "projectPath": "D:\\seven-pace-kafka\\seven-pace-kafka.csproj",
+        "packagesPath": "C:\\Users\\jwiebe\\.nuget\\packages\\",
+        "outputPath": "D:\\seven-pace-kafka\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jwiebe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[1.5.3, )"
+            },
+            "Confluent.SchemaRegistry": {
+              "target": "Package",
+              "version": "[1.5.3, )"
+            },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.7, )"
+            },
+            "chr.avro.confluent": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>seven_pace_kafka</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
+    <PackageReference Include="chr.avro.confluent" Version="7.0.4" />
+    <PackageReference Include="Confluent.Kafka" Version="1.5.3" />
+    <PackageReference Include="Confluent.SchemaRegistry" Version="1.5.3" />
+  </ItemGroup>
+
+</Project>

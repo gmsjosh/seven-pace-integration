@@ -1,0 +1,223 @@
+{
+    "type": "record",
+    "name": "WorkLog",
+    "namespace": "seven_pace_kafka.Models",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "string"
+        },
+        {
+            "name": "length",
+            "type": "int"
+        },
+        {
+            "name": "billableLength",
+            "type": [
+                "null",
+                "int"
+            ]
+        },
+        {
+            "name": "workItemId",
+            "type": [
+                "null",
+                "int"
+            ]
+        },
+        {
+            "name": "comment",
+            "type": "string"
+        },
+        {
+            "name": "user",
+            "type": {
+                "type": "record",
+                "name": "user",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "string"
+                    },
+                    {
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "uniqueName",
+                        "type": "string"
+                    },
+                    {
+                        "name": "displayName",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    {
+                        "name": "email",
+                        "type": "string"
+                    },
+                    {
+                        "name": "vstsId",
+                        "type": "string"
+                    },
+                    {
+                        "name": "vstsCollectionId",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "addedByUser",
+            "type": {
+                "type": "record",
+                "name": "addedByUser",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "string"
+                    },
+                    {
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "uniqueName",
+                        "type": "string"
+                    },
+                    {
+                        "name": "displayName",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    {
+                        "name": "email",
+                        "type": "string"
+                    },
+                    {
+                        "name": "vstsId",
+                        "type": "string"
+                    },
+                    {
+                        "name": "vstsCollectionId",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "editedByUser",
+            "type": {
+                "type": "record",
+                "name": "editedByUser",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "string"
+                    },
+                    {
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "uniqueName",
+                        "type": "string"
+                    },
+                    {
+                        "name": "displayName",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    {
+                        "name": "email",
+                        "type": "string"
+                    },
+                    {
+                        "name": "vstsId",
+                        "type": "string"
+                    },
+                    {
+                        "name": "vstsCollectionId",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "createdTimestamp",
+            "type": "string"
+        },
+        {
+            "name": "editedTimestamp",
+            "type": "string"
+        },
+        {
+            "name": "activityType",
+            "type": {
+                "type": "record",
+                "name": "activityType",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "string"
+                    },
+                    {
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "color",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "flags",
+            "type": {
+                "type": "record",
+                "name": "flags",
+                "fields": [
+                    {
+                        "name": "isTracked",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "isManuallyEntered",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "isChanged",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "isTrackedExtended",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "isImported",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "isFromApi",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "isBillable",
+                        "type": "boolean"
+                    }
+                ]
+            }
+        }
+    ]
+}
