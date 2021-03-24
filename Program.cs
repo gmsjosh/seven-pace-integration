@@ -14,7 +14,7 @@ namespace seven_pace_kafka
         static void Main(string[] args)
         {
             var sevenPaceWorkLogClient = new RestClient("https://gmsca.timehub.7pace.com/api/rest/workLogs/all/?api-version=3.0");
-            sevenPaceWorkLogClient.Authenticator = new HttpBasicAuthenticator("OpenApi", "ovDcKHq58wqxrPoeCW-GNFsgkzXTPUszaf20KrGrMUg");
+            sevenPaceWorkLogClient.Authenticator = new HttpBasicAuthenticator("OpenApi", "inserttokenhere");
             sevenPaceWorkLogClient.Timeout = -1;
             var workLogRequest = new RestRequest(Method.GET);
             IRestResponse response = sevenPaceWorkLogClient.Execute(workLogRequest);
