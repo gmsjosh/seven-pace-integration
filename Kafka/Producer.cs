@@ -71,8 +71,8 @@ namespace seven_pace_kafka
 
         public void SendMessage(TKey key, TValue value)
         {
-            lock (KVPS) 
-            KVPS.Enqueue(CreateKVP(key, value));
+            lock (KVPS)
+                KVPS.Enqueue(CreateKVP(key, value));
             /* using (var registry = new CachedSchemaRegistryClient(registryConfig))
             {
                 var typeResolver = new ReflectionResolver(resolveReferenceTypesAsNullable: true);

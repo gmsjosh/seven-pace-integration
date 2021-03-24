@@ -1,9 +1,7 @@
-﻿using System;
-using RestSharp;
+﻿using RestSharp;
 using RestSharp.Authenticators;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System.Threading.Tasks;
 using seven_pace_kafka.Models;
 
 namespace seven_pace_kafka
